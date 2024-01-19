@@ -2,8 +2,8 @@ const dataModel = require('./models/models');
 
 async function readData(req,res){
     try{
-        const obj = req.body;
-        const results = await dataModel.find(obj);
+        // const obj = req.body;
+        const results = await dataModel.find();
         if(results.length > 0)
             res.json({"data": results, "msg": "success"});
         else
