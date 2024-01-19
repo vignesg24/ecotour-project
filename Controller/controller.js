@@ -5,7 +5,7 @@ async function readData(req,res){
         const obj = req.body;
         const results = await dataModel.find(obj);
         if(results.length > 0)
-        res.json({"data": results, "msg": "success"});
+            res.json({"data": results, "msg": "success"});
         else
             res.json({"data": [], "msg": "Trainee not found!"});
 

@@ -19,6 +19,6 @@ const dataSchema = new Schema({
     }
 });
 
-const dataModel = mongoose.model('Ecotours', dataSchema);
+const dataModel = mongoose.model('ecotours', dataSchema);
 
 module.exports = dataModel;
